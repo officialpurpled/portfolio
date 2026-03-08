@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Eritofunmi </title>
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/about.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <nav> 
+    <div class="left-nav">
+      <img src="images/logo/portfolio.png" alt="Portfolio">
+      <div class="nav-list">
+        <a href="#home" active> Home</a>
+        <a href="#about"> About </a>
+        <a href="#gallery"> Gallery </a>
+        <a href="#contact"> Contact </a>
+      </div>
+    </div>
+
+    <div class="right-nav">
+      <a href="#">
+        <img src="images/logo/linkden.svg" alt="" cla>
+      </a>
+      <a href="#">
+        <img src="images/logo/x.svg" alt="">
+      </a>
+      <a href="#">
+        <img src="images/logo/linkden.svg" alt="">
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <div id="home" class="home">
+      <div class="profile-container">
+        <img src="images/img1.jpg" alt="My Big Picture">
+      </div>
+      <div class="container-wrapper">
+        <div class="intro-container">
+          <p class="lineOne">Hi, I am</p>
+          <p class="lineTwo"> <span>olalekan</span> <span>Akindeyinde</span></p>
+          <p class="lineThree">
+            Software Developer,
+            Graphic Design,
+            Crypto Vendor.
+          </p>
+  
+          <button id="contact-btn" class="contact-btn" href="#contact"> Contact Me </button>
+        </div>
+      </div>
+    </div>
+    <!-- <hr> -->
+    <div id="about" class="about">
+      <h3 id="about">About Me</h3>
+      <div class="card-wrapper">
+        <div class="card">
+          <div class="thumbnail">
+            <img src="images/photoshop.jpg" alt="njs">
+          </div>
+          <div class="caption">
+            Lorem ispum dolor sit amet.
+            Lorem ispum dolor sit amet.
+            Lorem ispum dolor sit amet. 
+          </div>
+        </div>
+        <div class="card">
+          <div class="thumbnail">
+            <img src="images/expressjs.jpg" alt="ejs">
+          </div>
+          <div class="caption">
+            Lorem ispum dolor sit amet.
+            Lorem ispum dolor sit amet.
+            Lorem ispum dolor sit amet. 
+          </div>
+        </div>
+        <div class="card">
+          <div class="thumbnail">
+            <img src="images/reactjs.jpg" alt="rjs">
+          </div>
+          <div class="caption">
+            Lorem ispum dolor sit amet.
+            Lorem ispum dolor sit amet.
+            Lorem ispum dolor sit amet. 
+          </div>
+        </div>
+        <div class="card">
+          <div class="thumbnail">
+            <img src="images/expressjs.jpg" alt="ejs">
+          </div>
+          <div class="caption">
+            Lorem ispum dolor sit amet.
+            Lorem ispum dolor sit amet.
+            Lorem ispum dolor sit amet. 
+          </div>
+        </div>
+        <div class="card">
+          <div class="thumbnail">
+            <img src="images/reactjs.jpg" alt="rjs">
+          </div>
+          <div class="caption">
+            Lorem ispum dolor sit amet.
+            Lorem ispum dolor sit amet.
+            Lorem ispum dolor sit amet. 
+          </div>
+        </div>
+        <div class="card">
+          <div class="thumbnail">
+            <img src="images/photoshop.jpg" alt="ps22">
+          </div>
+          <div class="caption">
+            Lorem ispum dolor sit amet.
+            Lorem ispum dolor sit amet.
+            Lorem ispum dolor sit amet. 
+          </div>
+        </div>
+        <div class="card">
+          <div class="thumbnail">
+            <img src="images/expressjs.jpg" alt="cr7">
+          </div>
+          <div class="caption">
+            Lorem ispum dolor sit amet.
+            Lorem ispum dolor sit amet.
+            Lorem ispum dolor sit amet. 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <hr> -->
+    <div id="gallery" class="gallery">
+      <h3 id="gallery"> My Gallery </h3>
+      <div class="card-wrapper">
+        <div>
+          <img src="html.png" alt="html">
+          <caption>
+            Lorem ispum dolor sit amet.
+            Lorem ispum dolor sit amet.
+            Lorem ispum dolor sit amet. 
+          </caption>
+        </div>
+        <div>
+          <img src="css.png" alt="css">
+          <caption>
+            Lorem ispum dolor sit amet.
+            Lorem ispum dolor sit amet.
+            Lorem ispum dolor sit amet. 
+          </caption>
+        </div>
+        <div>
+          <img src="javascript.png" alt="javascript">
+          <caption>
+            Lorem ispum dolor sit amet.
+            Lorem ispum dolor sit amet.
+            Lorem ispum dolor sit amet. 
+          </caption>
+        </div>
+        <div>
+          <img src="react.png" alt="react">
+          <caption>
+            Lorem ispum dolor sit amet.
+            Lorem ispum dolor sit amet.
+            Lorem ispum dolor sit amet. 
+          </caption>
+        </div>
+      </div>
+    </div>
+    <!-- <hr> -->
+    <div id="contact" class="contact">
+      <h3 id="contact">Contact Me</h3>
+      <form id="contact-form">
+        <input type="hidden" name="title" value="From My Portfolio">
+
+        <label>Name</label>
+        <input type="text" name="name" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Phone</label>
+        <input type="tel" name="phone" required>
+
+        <label for="message">Message</label>
+        <textarea name="message" required></textarea>
+        <input type="submit" value="Send" id="submit-btn">
+      </form>
+    </div>
+  </main>
+
+  <footer>
+   <h4> &copy; Copyright 2025 Purple Dragon | Portfolio </h4> 
+  </footer>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+        emailjs.init({
+          publicKey: "q6hBcmLBa5OjorFCc",
+        });
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function() {
+        let btn = document.getElementById("submit-btn");
+          document.getElementById('contact-form').addEventListener('submit', (event) => {
+              event.preventDefault();
+
+              btn.value = 'Sending...';
+              // these IDs from the previous steps
+              emailjs.sendForm('portfolio_contact', 'template_v2yg7la', this)
+                .then(() => {
+                  btn.value = 'Send';
+                  console.log('SUCCESS!');
+                  clearInput();
+                }, (error) => {
+                  btn.value = 'Send';
+                  prompt('OOPS! SOMETHING WENT WRONG...');
+                  console.log('FAILED...', error);
+                  clearInput();
+                });
+            });
+          }
+
+      const clearInput = () => {
+        document.getElementById("contact-form").reset();
+      }
+
+        // if (window.location.href.indexOf("contact") > -1) {
+        //   document.getElementById("contact-btn").style.display = "none";
+        // }
+        // let submitBtn = document.getElementById('submit-btn');
+        //   submitBtn.addEventListener('click', () => {
+        //     submitBtn.value = 'Sending...';
+        //   })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+.home{
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+
+  padding: 20px 10px;
+  background-color: rgb(2, 2, 171);
+  justify-content: space-between;
+  align-items: center;
+
+  /* margin-top: 50px; */
+  /* height: 100vh; */
+}
+.profile-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+  max-width: 400px;
+  min-width: 250px;
+}
+.profile-container img{
+  border-radius: 100%;
+}
+.container-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  height: 300px;
+}
+.text-container p, button{
+  color: white;
+}
+.lineOne{
+  margin-bottom: 12px;
+  font-family: arial var(--secondary-text);
+  color: var(--primary-text);
+}
+.lineTwo{
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.lineTwo span{
+  font-family: tahoma;
+  font-weight: 600;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 5vw;
+  display: inline-block;
+  animation: slide-in 2s ease-out forwards;
+
+  color: white;
+}
+/* .lineTwo:nth-child(1){
+  animation-delay: 0s;
+}
+.lineTwo:nth-child(2){
+  animation-delay: 0.2s;
+} */
+/* .lineTwo:nth-child(3){
+  animation-delay: 0.4s;
+}
+.lineTwo:nth-child(4){
+  animation-delay: 0.6s;
+}
+.lineTwo:nth-child(5){
+  animation-delay: 0.8s;
+} */
+
+@keyframes slide-in {
+  from{
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.lineThree{
+  font-size: 16px;
+  font-family: calibri;
+  font-weight: 1000;
+  /* margin-bottom: 45px; */
+  color: rgb(241, 238, 238);
+}
+
+.contact-btn{
+  background-color: transparent;
+  border: solid 2px;
+  padding: 10px 0px;
+  border-radius: 30px;
+  align-items: center;
+  width: 200px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.contact-btn:hover{
+  background-color: white;
+  color: rgb(36, 8, 219);
+  cursor: pointer;
+  transition: 1s;
+}
+
+@media screen and (max-width:600px){
+  .home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+  }
+  .profile-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .profile-container img{
+    border-radius: 10%;
+    width: 300px;
+  }  
+}

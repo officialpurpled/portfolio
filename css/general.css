@@ -1,0 +1,57 @@
+:root{
+  --bg-color:  rgb(2, 2, 171);
+  --secondary-bg-color: aliceblue; 
+  --primary-text: white;
+  --secondary-text: black;
+  --box-shadow: rgb(21, 78, 203);
+
+}
+*{
+  margin: 0;
+
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  padding-top: 90px; 
+}
+main > div {
+  min-height: 90vh;
+}
+
+h3{
+  display: block;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  text-decoration: underline rgb(22, 206, 212) 2px;
+  background-color: inherit;
+  font-size: x-large;
+  /* z-index: 99; */
+}
+.about h3{
+  /* Not working */
+  position: sticky;
+  top: -11px;
+}
+
+.gallery,
+.contact{
+  position: sticky;
+  top: 80px;
+  padding: 10px;
+}
+.gallery,
+footer{
+  background-color: var(--bg-color);
+  color: var(--primary-text);
+}
+.contact{
+  background-color: var(--secondary-bg-color);
+}
+footer{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
