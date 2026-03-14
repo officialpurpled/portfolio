@@ -1,5 +1,5 @@
 nav{
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   align-items: center;
 
@@ -38,12 +38,12 @@ nav{
   width: 210px;
 }
 .nav-list{
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
   width: 260px;
 
-}             
+}        
 .nav-list a{
   font-weight: 700;
   font-family: Roboto;
@@ -58,6 +58,9 @@ nav{
 .nav-list a:hover{
   transition: all 900ms ;
 }
+a{
+  cursor: pointer;
+}   
 .right-nav{
   display: flex;
   align-items: center;

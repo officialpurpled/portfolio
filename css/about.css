@@ -6,29 +6,59 @@
 }
 .card-wrapper{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
 }
+@keyframes slide-in {
+  from{
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .card{
+  /* animation: appearr linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 25%; */
+animation: slide-in 2s ease-in forwards;
+
   margin: 25px;
   border-radius: 4px;
-  position: relative;
+  /* position: rela//tive; */
   background-color: var(--primary-text);
   min-width: 220px;
-  max-width: 280px;
-  height: 350px;
+  max-width: 400px;
+  height: 180px;
 
   box-shadow: 4px 4px var(--box-shadow);
 
   display: flex;
-  flex-direction: column;
+
+}
+.anime{
+  animation: slide-in 2s ease-in forwards;
+}
+
+@keyframes slide-in {
+  from{
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 .card:hover{
   box-shadow: 4px 4px 5px var(--box-shadow);
 }
 .thumbnail{
-  height: 75%;
+  width: 40%;
   overflow: hidden;
 }
 .thumbnail > img{
@@ -42,12 +72,10 @@
   margin-top: 5px;
   color: black;
   font-size: 14px;
-  border-top: 2px solid blue;
-  border-radius: 7px;
-  /* background-color:; */
+  border-left: 2px solid var(--box-outline);
+  border-radius: 3px;
   text-align: center;
-  position: absolute;
   bottom: 0;
   padding: 10px;
-  height: 25%;
+  width: 60%;
 }

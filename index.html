@@ -15,26 +15,47 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+  <div class="loader">
+    <div>
+      <img src="images/logo/portfolio.png" alt="logo" class="loadImg">
+
+      <div class="bar-container">
+        <div class="bar">
+          .
+        </div>
+      </div>
+      <p class="val">0%</p> 
+    </div>
+  </div>
   <nav> 
     <div class="left-nav">
       <img src="images/logo/portfolio.png" alt="Portfolio">
       <div class="nav-list">
-        <a href="#home" active> Home</a>
-        <a href="#about"> About </a>
-        <a href="#gallery"> Gallery </a>
-        <a href="#contact"> Contact </a>
+        <a id="homeNav" active> Home</a>
+        <a id="aboutNav"> About </a>
+        <a id="galleryNav"> Gallery </a>
+        <a id="contactNav"> Contact </a>
       </div>
     </div>
 
     <div class="right-nav">
       <a href="#">
-        <img src="images/logo/linkden.svg" alt="" cla>
+        <img src="images/logo/linkden.svg" alt="">
       </a>
       <a href="#">
         <img src="images/logo/x.svg" alt="">
       </a>
       <a href="#">
-        <img src="images/logo/linkden.svg" alt="">
+        <img src="images/logo/git.svg" alt="">
+      </a>
+      <a href="#">
+        <img src="images/logo/whatsapp.svg" alt="">
+      </a>
+      <a href="#">
+        <img src="images/logo/instagram.svg" alt="">
+      </a>
+      <a href="#">
+        <img src="images/logo/tiktok.svg" alt="">
       </a>
     </div>
   </nav>
@@ -47,7 +68,7 @@
       <div class="container-wrapper">
         <div class="intro-container">
           <p class="lineOne">Hi, I am</p>
-          <p class="lineTwo"> <span>olalekan</span> <span>Akindeyinde</span></p>
+          <p class="lineTwo"> <span>olalekan</span> <span>akindeyinde</span></p>
           <p class="lineThree">
             Software Developer,
             Graphic Design,
@@ -60,7 +81,7 @@
     </div>
     <!-- <hr> -->
     <div id="about" class="about">
-      <h3 id="about">About Me</h3>
+      <h3>About Me</h3>
       <div class="card-wrapper">
         <div class="card">
           <div class="thumbnail">
@@ -122,21 +143,11 @@
             Lorem ispum dolor sit amet. 
           </div>
         </div>
-        <div class="card">
-          <div class="thumbnail">
-            <img src="images/expressjs.jpg" alt="cr7">
-          </div>
-          <div class="caption">
-            Lorem ispum dolor sit amet.
-            Lorem ispum dolor sit amet.
-            Lorem ispum dolor sit amet. 
-          </div>
-        </div>
       </div>
     </div>
     <!-- <hr> -->
     <div id="gallery" class="gallery">
-      <h3 id="gallery"> My Gallery </h3>
+      <h3> My Gallery </h3>
       <div class="card-wrapper">
         <div>
           <img src="html.png" alt="html">
@@ -174,7 +185,7 @@
     </div>
     <!-- <hr> -->
     <div id="contact" class="contact">
-      <h3 id="contact">Contact Me</h3>
+      <h3>Contact Me</h3>
       <form id="contact-form">
         <input type="hidden" name="title" value="From My Portfolio">
 
@@ -221,7 +232,7 @@
                   clearInput();
                 }, (error) => {
                   btn.value = 'Send';
-                  prompt('OOPS! SOMETHING WENT WRONG...');
+                  alert('OOPS! SOMETHING WENT WRONG...');
                   console.log('FAILED...', error);
                   clearInput();
                 });
@@ -241,5 +252,7 @@
         //   })
 
     </script>
+
+  <script src="script/loader.js"></script>
 </body>
 </html>
