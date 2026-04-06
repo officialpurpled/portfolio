@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Eritofunmi </title>
   <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/loader.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/contact.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,23 +41,29 @@
     </div>
 
     <div class="right-nav">
-      <a href="#">
+      <a href="#" class="socials">
         <img src="images/logo/linkden.svg" alt="">
+        <div class="tooltip">linkedin</div>
       </a>
-      <a href="#">
+      <a href="#" class="socials">
         <img src="images/logo/x.svg" alt="">
+        <div class="tooltip">twitter</div>
       </a>
-      <a href="#">
+      <a href="#" class="socials">
         <img src="images/logo/git.svg" alt="">
+        <div class="tooltip">github</div>
       </a>
-      <a href="#">
+      <a href="#" class="socials">
         <img src="images/logo/whatsapp.svg" alt="">
+        <div class="tooltip">whatsapp</div>
       </a>
-      <a href="#">
+      <a href="#" class="socials">
         <img src="images/logo/instagram.svg" alt="">
+        <div class="tooltip">instagram</div>
       </a>
-      <a href="#">
+      <a href="#" class="socials">
         <img src="images/logo/tiktok.svg" alt="">
+        <div class="tooltip">tiktok</div>
       </a>
     </div>
   </nav>
@@ -75,7 +83,8 @@
             Crypto Vendor.
           </p>
   
-          <button id="contact-btn" class="contact-btn" href="#contact"> Contact Me </button>
+          <button id="contact-btn" class="contact-btn" href="#contact"> Contact Me </button> 
+          <button id="download-btn" class="contact-btn" href="#download"> Download CV </button>
         </div>
       </div>
     </div>
@@ -185,28 +194,44 @@
     </div>
     <!-- <hr> -->
     <div id="contact" class="contact">
-      <h3>Contact Me</h3>
-      <form id="contact-form">
-        <input type="hidden" name="title" value="From My Portfolio">
-
-        <label>Name</label>
-        <input type="text" name="name" required>
-
-        <label>Email</label>
-        <input type="email" name="email" required>
-
-        <label>Phone</label>
-        <input type="tel" name="phone" required>
-
-        <label for="message">Message</label>
-        <textarea name="message" required></textarea>
-        <input type="submit" value="Send" id="submit-btn">
-      </form>
+      <div class="form-container">
+        <h3>Contact Me</h3>
+        <form id="contact-form">
+          <input type="hidden" name="title" value="From My Portfolio">
+          <label> 
+            <span>
+              Name
+            </span>
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            <span>
+              Email
+            </span>
+            <input type="email" name="email" required>
+          </label>
+  
+          <label>
+            <span>
+              Phone
+            </span> 
+            <input type="tel" name="phone" required>
+          </label>
+  
+          <label for="message">
+            <span>
+              Message
+            </span>
+            <textarea name="message" required></textarea>
+          </label>
+          <input type="submit" value="Send" id="submit-btn" class="btn">
+        </form>
+      </div>
     </div>
   </main>
 
   <footer>
-   <h4> &copy; Copyright 2025 Purple Dragon | Portfolio </h4> 
+   <h4> &copy; Copyright 2026 Purple Dragon | Portfolio </h4> 
   </footer>
 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
@@ -253,6 +278,6 @@
 
     </script>
 
-  <script src="script/loader.js"></script>
+  <!-- <script src="script/loader.js"></script> -->
 </body>
 </html>

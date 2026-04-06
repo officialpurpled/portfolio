@@ -22,14 +22,10 @@
 }
 
 .card{
-  /* animation: appearr linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 25%; */
-animation: slide-in 2s ease-in forwards;
+  animation: slide-in 2s ease-in forwards;
 
   margin: 25px;
   border-radius: 4px;
-  /* position: rela//tive; */
   background-color: var(--primary-text);
   min-width: 220px;
   max-width: 400px;
