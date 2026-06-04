@@ -4,6 +4,24 @@
   overflow: scroll;
   background-color: var(--secondary-bg-color);
 }
+
+.cards span{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cards span::before {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 25px;
+  border-radius: 20px;
+  background: linear-gradient(120deg, rgb(32, 32, 77), #6366F1 80%);
+}
 .card-wrapper{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -22,22 +40,24 @@
 }
 
 .card{
-  animation: slide-in 2s ease-in forwards;
+  animation: slide-in 3s ease-in forwards;
+  animation-delay: 1s;
 
-  margin: 25px;
+  margin: 20px;
   border-radius: 4px;
-  background-color: var(--primary-text);
+  background-color: var(--bg-color);
   min-width: 220px;
   max-width: 400px;
-  height: 180px;
+  height: 140px;
 
-  box-shadow: 4px 4px var(--box-shadow);
+  box-shadow: 4px 4px var(--secondary-color);
+  transition: all 1s;
 
   display: flex;
-
 }
 .anime{
   animation: slide-in 2s ease-in forwards;
+  animation-delay: 3s;
 }
 
 @keyframes slide-in {
@@ -51,27 +71,60 @@
   }
 }
 .card:hover{
-  box-shadow: 4px 4px 5px var(--box-shadow);
+  transform: translateY(-9px);
+  background: rgba(32, 32, 77, 0.957);
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.15);
 }
+
 .thumbnail{
   width: 40%;
   overflow: hidden;
 }
-.thumbnail > img{
+.thumbnail img{
   width: 100%;
-
   /* Not working */
-  object-fit: contain;
+  object-fit: fill;
   object-position: top;
 }
 .caption{
-  margin-top: 5px;
-  color: black;
-  font-size: 14px;
-  border-left: 2px solid var(--box-outline);
+  color: var(--fade-color);
+  margin: 5px;
+  font-size: 13px;
+  border-left: 2px solid;
   border-radius: 3px;
-  text-align: center;
-  bottom: 0;
+  text-align: left;
   padding: 10px;
   width: 60%;
+  position: relative;
 }
+.caption p{
+  margin-bottom: 5px;
+  color: var(--secondary-color);
+  font-size: 18px;
+  font-weight: 600;
+  z-index: 20;
+}
+.a-icon{
+  position: absolute;
+  right:0;
+  bottom: 0;
+  /* color: var(--fade-color); */
+  animation: blink 3s ease-out infinite;
+  animation-delay: 5s;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  10% { opacity: 0.2; }
+  20% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+/* @keyframes bounce-curve {
+  0%{ transform: translate(0px, 0px) }
+  20% { transform: translate(-2px, 8px) }
+  40% { transform: translate(-3px, 0px) }
+  60% { transform: translate(0px, -8px) }
+  80% { transform: translate(3px, 0px) }
+  100% { transform: translate(0px, 0px) }
+} */

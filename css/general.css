@@ -1,22 +1,22 @@
 :root{
-  /* --bg-color:  rgb(46, 46, 108); */
   --bg-color: rgb(32, 32, 77);
-  --secondary-bg-color: aliceblue; 
-  --primary-text: white;
-  --secondary-text: black;
-  --opt-text-color: var(--bg-color);
+  --secondary-bg-color: rgb(219, 237, 253); 
+  --fade-color: #ffffffae;
+  --primary-color: white;
+  --secondary-color:#6366F1;
+  --black-color: black;
+  --opt-color: var(--bg-color);
   --box-shadow: var(--bg-color);
   --box-outline: var(--box-shadow);
 
 }
 *{
   margin: 0;
-
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
 body{
-  padding-top: 90px; 
+  padding-top: 70px; 
   background-color: var(--secondary-bg-color);
 }
 
@@ -44,7 +44,7 @@ h3{
   text-align: center;
   padding: 10px;
   margin-top: 10px;
-  text-decoration: underline rgb(22, 206, 212) 2px;
+  text-decoration: underline var(--secondary-color) 2px;
   background-color: inherit;
   font-size: x-large;
   /* z-index: 99; */
@@ -64,9 +64,10 @@ h3{
 .gallery,
 footer{
   background-color: var(--bg-color);
-  color: var(--primary-text);
+  color: var(--primary-color);
 }
 .contact{
+  color: var(--bg-color);
   background-color: var(--secondary-bg-color);
 }
 footer{

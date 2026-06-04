@@ -13,9 +13,9 @@ nav{
   font-size: large;
   border-bottom: 1.2px solid var(--bg-color);
 
-  z-index: 1000;
+  z-index: 999;
 
-  height: 90px;
+  height: 70px;
 }
 .left-nav{
   display: flex;

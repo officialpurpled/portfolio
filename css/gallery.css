@@ -1,0 +1,76 @@
+.g-card-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  padding-bottom: 30px;
+  column-gap: 30px;
+  row-gap: 25px;
+}
+.g-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: white;
+  border: 1px solid var(--secondary-color);
+  border-radius: 1%;
+  overflow: hidden;
+  transition: all 300ms;
+}
+.g-card:hover{
+  transform: translateY(-3px);
+  box-shadow: 12px 2px 60px rgba(115, 44, 201, 0.484);
+}
+
+.g-thumbnail{
+  /* width: 100%; */
+  height: 180px;
+}
+.g-thumbnail img{
+  width: 100%;
+  height: 100%;
+}
+.g-body{
+  background-color: var(--bg-color);
+  padding: 10px;
+}
+.g-body .head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.g-body h2{
+  font-size: 18px;
+  font-weight: 500;
+}
+.g-body span{
+  font-size: 13px;
+  border: 1.2px solid purple;
+  border-radius: 20px;
+  padding: 3px 10px;
+  background: rgba(234, 0, 255, 0.162);
+}
+.g-body .role{
+  font-size: 15px;
+  color: var(--fade-color);
+  margin: 5px 0;
+}
+.g-body .desc{
+  font-size: 13px;
+  color: var(--fade-color);
+}
+.g-card button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 3px 10px;
+  background-color: var(--secondary-color);
+  color: var(--bg-color);
+  margin-top: 5px;
+
+  border: 2px solid;
+  border-radius: 5px;
+}
