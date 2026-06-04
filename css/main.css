@@ -1,5 +1,6 @@
 .home{
   background-color: var(--bg-color);
+  position: relative;
 }
 
 .hero{
@@ -17,21 +18,18 @@
   border-top: 1.5px solid rgba(255,255,255,0.06);
   margin: 0;
 }
-
 .stat {
   flex: 1;
   padding: 16px 0 16px 40px;
   border-right: 0.5px solid rgba(255,255,255,0.06);
 }
 .stat:last-child { border-right: none; }
-
 .stat-num {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 28px;
   color: #fff;
   letter-spacing: 1px;
 }
-
 .stat-label {
   font-size: 11px;
   color: rgba(255,255,255,0.35);
@@ -196,9 +194,8 @@
   background-color: rgba(182, 212, 237, 0.15);
   border: solid 1px;
   color: var(--secondary-color);
-  width: 30px;
-  height: 0;
   cursor: default;
+  text-wrap: nowrap;
 }
 .lineThree span:nth-child(2){
   color: var(--fade-color);
@@ -282,25 +279,4 @@
 @keyframes bounce {
   0%, 100% { transform: translateX(-50%) translateY(0); }
   50% { transform: translateX(-50%) translateY(5px); }
-}
-
-@media screen and (max-width:600px){
-  .home{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
-  }
-  .profile-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-  }
-  .profile-container img{
-    border-radius: 10%;
-    width: 300px;
-  }  
 }
