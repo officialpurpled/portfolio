@@ -142,7 +142,7 @@
   margin-bottom: 10px;
 }
 .lineTwo span{
-  font-family: tahoma;
+  font-family: tahoma, Calibri;
   font-weight: 600;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -180,10 +180,10 @@
 }
 .lineThree{
   font-size: 14px;
-  font-family: calibri;
   margin-top: 20px;
   margin-bottom: 30px;
   display: inline-block;
+  font-family: calibri;
 }
 
 .lineThree span{

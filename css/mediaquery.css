@@ -16,6 +16,10 @@
     border-radius: 10%;
     width: 250px;
   } 
+  .profile-container span{
+    bottom: -4%;
+    right: 25%;
+  }
 
   .container-wrapper{ width: 100%;}
   .intro-container{
@@ -78,11 +82,35 @@
   .about .card-wrapper, .g-card-wrapper{
     grid-template-columns: 1fr;
   }
-
-  .g-card-wrapper{
-
+  .about .card{
+    margin-top: 10px;
+  }
+  .design-tool{
+    padding-top: 15px;
   }
 
   /* contact */
+  .contact, .contact h3{
+    margin: 0;
+    margin-top: 0;
+  }
+  .form-container{
+    margin-bottom: 30px;
+  }
+  form{
+    margin-top: 10px;
+    width: 95%;
+  }
+
+  .btn{
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 25px;
+    gap: 5px;
+    font-size: 13px;
+  }
+  .btn .ct-icon{
+    width: 16px;
+  }
 
 }

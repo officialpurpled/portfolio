@@ -93,7 +93,7 @@ textarea:focus{
   height: auto;
   border: 1.5px solid;
   padding: 15px 0;
-  border-radius: 30px;
+  border-radius: 20px;
   color: var(--primary-color);
   background-color: var(--secondary-color);
   text-transform: uppercase;
@@ -102,4 +102,8 @@ textarea:focus{
 .btn:hover{
   background-color: transparent;
   color: var(--secondary-color);
+}
+
+.ct-icon{
+  width: 20px;
 }
