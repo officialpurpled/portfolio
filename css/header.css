@@ -54,9 +54,9 @@ nav{
   flex-shrink: 1;
   transition: none;
 }
-.nav-list a:hover{
+/* .nav-list a:hover{
   transition: all 900ms ;
-}
+} */
 /* disabled {nav list} */
 
 a{  
@@ -96,7 +96,7 @@ a{
   bottom: -25px;
   font-size: 12px;
   color: aliceblue;
-  background-color: rgba(28, 26, 37, 0.55);
+  background-color: #20204dac;
   padding: 1px 4px;
   border-radius: 2px;
   pointer-events: none;
