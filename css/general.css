@@ -17,15 +17,13 @@
 }
 body{
   padding-top: 70px; 
-  background-color: var(--secondary-bg-color);
+  background-color: var(--bg-color);
 }
-
-main > div {
+.g-card,
+.contact, .gallery, .about{
   animation: appear linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 25%;
-
-  min-height: 90vh;
+  animation-range: entry 0% cover 20%;
 }
 @keyframes appear {
   from {
@@ -37,6 +35,16 @@ main > div {
     scale: 1;
   }
 }
+.grid-overlay {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(116, 0, 101, 0.064) 0.2px, transparent 5px),
+    linear-gradient(90deg, rgba(56, 0, 116, 0.064) 0.2px, transparent 20px);
+  background-size: 10px 10px;
+  pointer-events: none;
+  z-index: 1;
+}
 
 h3{
   display: block;
@@ -47,14 +55,7 @@ h3{
   text-decoration: underline var(--secondary-color) 2px;
   background-color: inherit;
   font-size: x-large;
-  /* z-index: 99; */
 }
-/* .about h3{
-  /* Not working
-  position: sticky;
-  top: -11px;
-} */
-
 .gallery,
 .contact{
   position: sticky;

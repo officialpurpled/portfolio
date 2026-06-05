@@ -38,19 +38,19 @@
 }
 .g-body .head{
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .g-body h2{
+  flex: 1;
   font-size: 18px;
   font-weight: 500;
 }
 .g-body span{
   font-size: 13px;
-  border: 1.2px solid purple;
+  border: 1.2px solid rgb(193, 140, 6);
   border-radius: 20px;
   padding: 3px 10px;
-  background: rgba(234, 0, 255, 0.162);
+  background:rgba(173, 126, 8, 0.21);
 }
 .g-body .role{
   font-size: 15px;

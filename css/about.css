@@ -4,7 +4,10 @@
   overflow: scroll;
   background-color: var(--secondary-bg-color);
 }
-
+.cards{
+  position: relative;
+  z-index: 999;
+}
 .cards span{
   display: flex;
   align-items: center;
@@ -48,7 +51,7 @@
   background-color: var(--bg-color);
   min-width: 220px;
   max-width: 500px;
-  height: 140px;
+  height: auto;
 
   box-shadow: 4px 4px var(--secondary-color);
   transition: all 1s;
@@ -77,15 +80,15 @@
 }
 
 .thumbnail{
-  /* width: 40%; */
-  /* overflow: hidden; */
+  width: 40%;
+  padding: 7px 15px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .thumbnail img{
-  width: 120px;
-  margin: 0 5px;
+  width: 100%;
+  margin: 5px;
   /* Not working */
   object-fit: contain;
   object-position: top;
