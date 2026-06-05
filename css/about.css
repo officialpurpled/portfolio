@@ -4,10 +4,6 @@
   overflow: scroll;
   background-color: var(--secondary-bg-color);
 }
-.cards{
-  position: relative;
-  z-index: 999;
-}
 .cards span{
   display: flex;
   align-items: center;
