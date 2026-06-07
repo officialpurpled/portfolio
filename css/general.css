@@ -10,15 +10,20 @@
   --box-outline: var(--box-shadow);
 
 }
+
 *{
   margin: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
   padding-top: 70px; 
   background-color: var(--bg-color);
 }
+
 .g-card,
 .contact, .gallery, .about{
   animation: appear linear;

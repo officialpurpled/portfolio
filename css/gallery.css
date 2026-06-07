@@ -8,6 +8,7 @@
   column-gap: 30px;
   row-gap: 25px;
 }
+
 .g-card{
   display: flex;
   flex-direction: column;
@@ -15,7 +16,7 @@
 
   background-color: white;
   border: 1px solid var(--secondary-color);
-  border-radius: 1%;
+  border-radius: 1.5%;
   overflow: hidden;
   transition: all 300ms;
 }
@@ -25,24 +26,30 @@
 }
 
 .g-thumbnail{
-  /* width: 100%; */
-  height: 180px;
+  background-color: var(--bg-color);
+  width: 100%;
+  height: 100%;
 }
 .g-thumbnail img{
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
+
 .g-body{
   background-color: var(--bg-color);
   padding: 10px;
+  padding-top: 5px;
 }
+
 .g-body .head{
   display: flex;
   align-items: center;
 }
 .g-body h2{
   flex: 1;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
 }
 .g-body span{
@@ -52,20 +59,33 @@
   padding: 3px 10px;
   background:rgba(173, 126, 8, 0.21);
 }
+
 .g-body .role{
   font-size: 15px;
   color: var(--fade-color);
   margin: 5px 0;
 }
+
 .g-body .desc{
   font-size: 13px;
   color: var(--fade-color);
 }
-.g-card button{
+
+.g-body .stacks{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 10px 0 5px 0;
+}
+.g-body .stack{
+  /* flex: 1 0 50px; */
+  font-size: 12px;
+  border: 1px purple solid;
+  border-radius: 5px;
+  background-color: rgba(128, 0, 128, 0.233);
+}
+
+.g-card button{
   padding: 3px 10px;
   background-color: var(--secondary-color);
   color: var(--bg-color);
@@ -73,4 +93,14 @@
   font-weight: 500;
   border: 2px solid;
   border-radius: 5px;
+}
+.g-card a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.g-icon{
+  
 }
