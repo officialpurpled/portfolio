@@ -100,7 +100,7 @@ textarea:focus{
   color: var(--primary-color);
   background-color: var(--secondary-color);
   text-transform: uppercase;
-  transition: 0.7s ease-in-out;
+  transition: all 0.7s;
 }
 .btn:hover{
   background-color: transparent;

@@ -109,7 +109,7 @@
                   Contact Me 
                 </a>
 
-                <a href="./Snapchat-1039311338.jpg" download="olalekan-curriculum-vitae.jpg" class="btn-ghost">
+                <a href="./files/resume.docx" download="olalekan-curriculum-vitae.docx" class="btn-ghost">
                   <i data-lucide="download" style="width: 18px;" aria-hidden="true"></i>
                   Download CV
                 </a>
@@ -146,7 +146,7 @@
         <div class="card-wrapper">
         <div class="card">
           <div class="thumbnail">
-            <img src="images/nodejs.svg" alt="rjs">
+            <img src="images/about/nodejs.svg" alt="rjs">
           </div>
           <div class="caption">
             <i data-lucide="terminal" class="a-icon"></i>
@@ -156,7 +156,7 @@
         </div>
         <div class="card">
           <div class="thumbnail">
-            <img src="images/reactjs.svg" alt="reactjs">
+            <img src="images/about/reactjs.svg" alt="reactjs">
           </div>
           <div class="caption">
             <i data-lucide="terminal" class="a-icon"></i>
@@ -166,7 +166,7 @@
         </div>
         <div class="card">
           <div class="thumbnail">
-            <img src="images/js.svg" alt="js">
+            <img src="images/about/js.svg" alt="js">
           </div>
           <div class="caption">
             <i data-lucide="terminal" class="a-icon"></i>
@@ -176,7 +176,7 @@
         </div>
         <div class="card">
           <div class="thumbnail">
-            <img src="images/mongodb.svg" alt="mongoose">
+            <img src="images/about/mongodb.svg" alt="mongoose">
           </div>
           <div class="caption">
             <i data-lucide="terminal" class="a-icon"></i>
@@ -191,7 +191,7 @@
         <div class="card-wrapper">
         <div class="card">
           <div class="thumbnail">
-            <img src="images/photoshop.svg" alt="ps7">
+            <img src="images/about/photoshop.svg" alt="ps7">
           </div>
           <div class="caption">
             <i data-lucide="palette" class="a-icon"></i>
@@ -201,7 +201,7 @@
         </div>
         <div class="card">
           <div class="thumbnail">
-            <img src="images/corel-draw.svg" alt="corel-x8">
+            <img src="images/about/corel-draw.svg" alt="corel-x8">
           </div>
           <div class="caption">
            <i data-lucide="palette" class="a-icon"></i>
@@ -211,7 +211,7 @@
         </div>
         <div class="card">
           <div class="thumbnail">
-            <img src="images/canva.svg" alt="canva pro">
+            <img src="images/about/canva.svg" alt="canva pro">
           </div>
           <div class="caption">
             <i data-lucide="palette" class="a-icon"></i>
@@ -523,49 +523,7 @@
   </script>
   
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-      (function() {
-        emailjs.init({
-          publicKey: "q6hBcmLBa5OjorFCc",
-        });
-      })();
-    </script>
-    <script type="text/javascript">
-      window.onload = function() {
-        let btn = document.getElementById("submit-btn");
-          document.getElementById('contact-form').addEventListener('submit', (event) => {
-              event.preventDefault();
+  <script src="script/emailjs.js"></script>
 
-              btn.value = 'Sending...';
-              // these IDs from the previous steps
-              emailjs.sendForm('portfolio_contact', 'template_v2yg7la', this)
-                .then(() => {
-                  btn.value = 'Send';
-                  console.log('SUCCESS!');
-                  clearInput();
-                }, (error) => {
-                  btn.value = 'Send';
-                  alert('OOPS! SOMETHING WENT WRONG...');
-                  console.log('FAILED...', error);
-                  clearInput();
-                });
-            });
-          }
-
-      const clearInput = () => {
-        document.getElementById("contact-form").reset();
-      }
-
-        // if (window.location.href.indexOf("contact") > -1) {
-        //   document.getElementById("contact-btn").style.display = "none";
-        // }
-        // let submitBtn = document.getElementById('submit-btn');
-        //   submitBtn.addEventListener('click', () => {
-        //     submitBtn.value = 'Sending...';
-        //   })
-
-    </script>
-
-  <!-- <script src="script/loader.js"></script> -->
 </body>
 </html>
