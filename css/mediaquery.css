@@ -55,13 +55,7 @@
   .g-card-wrapper{
     grid-template-columns: 1fr 1fr;
   }
-  .g-body h2{
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
+  
   .g-body{
     padding: 12px;
   }
