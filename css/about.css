@@ -112,7 +112,6 @@
   position: absolute;
   right:0;
   bottom: 0;
-  /* color: var(--fade-color); */
   animation: blink 3s ease-out infinite;
   animation-delay: 5s;
 }

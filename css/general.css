@@ -1,9 +1,9 @@
-:root{
+:root {
   --bg-color: #20204d;
-  --secondary-bg-color: rgb(219, 237, 253); 
+  --secondary-bg-color: rgb(219, 237, 253);
   --fade-color: #ffffffae;
   --primary-color: white;
-  --secondary-color:#6366F1;
+  --secondary-color: #6366F1;
   --black-color: black;
   --opt-color: var(--bg-color);
   --box-shadow: var(--bg-color);
@@ -11,35 +11,42 @@
 
 }
 
-*{
+* {
   margin: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
-body{
-  padding-top: 70px; 
+
+body {
+  padding-top: 70px;
   background-color: var(--bg-color);
 }
 
 .g-card,
-.contact, .gallery, .about{
+.contact,
+.gallery,
+.about {
   animation: appear linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 20%;
+  animation-range: entry 0% cover 14%;
 }
+
 @keyframes appear {
   from {
     opacity: 0;
     scale: 0.5;
   }
+
   to {
     opacity: 1;
     scale: 1;
   }
 }
+
 .grid-overlay {
   position: absolute;
   inset: 0;
@@ -51,7 +58,7 @@ body{
   z-index: 1;
 }
 
-h3{
+h3 {
   display: block;
   align-items: center;
   text-align: center;
@@ -61,24 +68,140 @@ h3{
   background-color: inherit;
   font-size: x-large;
 }
+
 .gallery,
-.contact{
+.contact {
   position: sticky;
   top: 80px;
   padding: 10px;
 }
+
 .gallery,
-footer{
+footer {
   background-color: var(--bg-color);
   color: var(--primary-color);
 }
-.contact{
+
+.contact {
   color: var(--bg-color);
   background-color: var(--secondary-bg-color);
 }
-footer{
+
+.paralax-section {
+  position: relative;
+  min-height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(rgba(14, 20, 41, 0.72), rgba(14, 20, 41, 0.82)),
+    url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat fixed;
+  color: #fff;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.parallax-content {
+  max-width: 760px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--secondary-color);
+  font-size: 12px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.parallax-title {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.1;
+  margin-bottom: 18px;
+}
+
+.parallax-subtitle {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.parallax-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.parallax-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  background: #7c3aed;
+  color: #fff;
+  border: 1px solid #7c3aed;
+}
+
+.parallax-btn:hover {
+  background: transparent;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.parallax-btn-secondary {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  color: #fff;
+}
+
+.parallax-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.parallax-stats {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.parallax-stats div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 120px;
+}
+
+.parallax-stats strong {
+  font-size: 28px;
+  color: #fff;
+}
+
+.parallax-stats span {
+  font-size: 14px;
+  color: #dfe7ff;
+}
+
+footer {
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer p {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  text-align: center;
 }

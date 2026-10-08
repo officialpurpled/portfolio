@@ -43,15 +43,11 @@
   justify-content: center;
   align-items: center;
   width: 95%;
-  /* max-width: 400px;
-  min-width: 250px; */
   margin: 40px 0;
   position: relative;
-  /* background-color: #fff; */
 }
 .profile-container img{
   border-radius: 100%;
-  /* width: 100%; */
   filter: grayscale(90%);
   transition: filter 1s;
 }
@@ -60,15 +56,11 @@
 }
 
 .img-ring {
-  /* width: 70%; */
   height: auto; 
   border-radius: 50%;
   padding: 3px;
   background: linear-gradient(135deg, #6366F1, #818CF8, #374358 90%);
-  /* background: linear-gradient(135deg, #f9a914, #aa5027, #aa159e 90%); */
   transition: all 3s;
-  /* animation: bubbles 4s ease-in-out;
-  animation-iteration-count: infinite; */
 }
 
   @keyframes bubbles {
@@ -132,9 +124,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* text-align: center; */
-
-  /* height: 300px; */
 }
 .text-container > p, button{
   color: white;
@@ -164,8 +153,8 @@
   margin-bottom: 10px;
 }
 .lineTwo span{
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
   letter-spacing: 5px;
   text-transform: uppercase;
   font-size: 4vw;
@@ -174,21 +163,6 @@
 
   color: white;
 }
-/* .lineTwo:nth-child(1){
-  animation-delay: 0s;
-}
-.lineTwo:nth-child(2){
-  animation-delay: 0.2s;
-} */
-/* .lineTwo:nth-child(3){
-  animation-delay: 0.4s;
-}
-.lineTwo:nth-child(4){
-  animation-delay: 0.6s;
-}
-.lineTwo:nth-child(5){
-  animation-delay: 0.8s;
-} */
 
 @keyframes slide-in {
   from{
